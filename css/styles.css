@@ -33,6 +33,12 @@
 .navbar-ul a:hover {
     background-color: #111;
 }
+/*NAV BAR Styling*/
+.navbar-inverse {
+  background-color: #333!important;
+}
+
+
 
 /* main-header IMG*/
 img {
@@ -71,10 +77,12 @@ padding: 2%;
     padding: 2%;
   }
 
-/*Events Page*/
-.cookoutPics {
-  width: auto;
-  float: right;
+
+.cookoutPics img {
+  width: 287px;
+  height: 217px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 
@@ -104,7 +112,7 @@ footer a:active {
 }
 
 #facebook {
- width: 2.5%;
- height: 2.5%;
+ width: 3em;
+ height: 4em;
  padding-bottom: 1em;
 }

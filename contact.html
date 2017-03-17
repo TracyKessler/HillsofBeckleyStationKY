@@ -1,32 +1,52 @@
 <!DOCTYPE html>
+<!-- Same on all pages -->
+<!DOCTYPE html>
 <html>
   <title>Hills of Beckley Station KY</title>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+    <head>
+      <meta charset="utf-8">
+      <!-- Bootstrap -->
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css" />
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+    </head>
+<body>
+  <header>
+    <div class="container-fluid">
+    <div class="main-header">
+      <h1>The Hills of Beckley Station</h1>
+      <h2>Louisville, Kentucky</h2>
+    </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div>
+      <img  src="img/newsign.jpg" alt="The brick entrance to neighborhood">
+    </div>
+  </header>
 
-  <body>
-    <header>
-      <div class="main-header">
-        <h1>The Hills of Beckley Station</h1>
-        <h2>Louisville, Kentucky</h2>
-      </div>
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-              <ul class="navbar-ul">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-        </nav>
-      <div>
-        <img  src="img/newsign.jpg" alt="The brick entrance to neighborhood">
-      </div>
-    </header>
+<!-- CONTACT PAGE ONLY -->
+<div class="body-text">
     <div class="contact-info">
       <h1>Contact Information</h1>
         <p>HBS Board of Directors</p>
@@ -35,7 +55,9 @@
         <p>Phone: 502-741-5080</p>
         <p>Email: <a href="HillsofBeckleyStation@gmail.com"> HillsofBeckleyStation@gmail.com</a></p>
     </div>
+</div>
   </body>
+<!-- Same on all pages -->
   <footer>
     <div>
     <a href="https://www.facebook.com/groups/92263038711/" target="_blank"><img id="facebook" src="img/FBicon.png" alt="Facebook Logo">
