@@ -13,6 +13,13 @@
       <script src="js/bootstrap.min.js"></script>
       <!-- Font -->
       <link href="https://fonts.googleapis.com/css?family=Lusitana:400,700" rel="stylesheet">
+      <style>
+      #map {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
     </head>
 <body>
   <header>
@@ -54,9 +61,27 @@
       It was established in May 2001 by the builder and was turned over to members on February 16, 2006.</p>
     <p>Please browse the site to learn more about our community.</p>
     <p>Thank you for visiting!</p>
-    <div>
+    <!--<div>
       <img id="lotpic" src="img/HOAlots.png" alt="map of the lots">
-    </div>
+    </div>-->
+        <h3>Google Maps</h3>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 38.223026, lng: -85.480475};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 16,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7u9GEbuxqi1ndXeLTJQod4_vmyfZxBOQ&callback=initMap">
+        </script>
   </div>
   </div>
   </body>
